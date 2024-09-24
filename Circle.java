@@ -13,11 +13,28 @@ public class Circle {
 		color = "red";
 	}
 	
+	public Circle(double rad, String color) {
+		rad = radius;
+		this.color = color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public void setRadius(double r) {
+		radius = r;
+	}
+	public String getColor() {
+		 return color;
+	}
+	
 	public double getRadius() {
 		return radius;
 	}
 	
 	public double getArea() {
 		return radius*radius*Math.PI;
+	}
+	public String toString() {
+		return "Circle[radius=" + radius + " color=" + color + "]";
 	}
 }
